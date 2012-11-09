@@ -1,0 +1,15 @@
+set :gateway, nil
+role :storage, "oneadmin@opennebula-storage.hpcnc.com"
+role :opennebula, "oneadmin@opennebula.hpcnc.com"
+role :frontends, "oneadmin@10.10.0.2"
+role :vm_container, "oneadmin@10.10.2.1"
+
+desc "ls"
+task :ls do
+  foo
+  run "ls"
+end
+
+task :foo do
+  run "echo foo"
+end
