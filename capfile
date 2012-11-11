@@ -1,12 +1,18 @@
-set :gateway, nil
+gateways = {
+    :localhost => "localhost",
+    :madoka => "oneadmin@madoka.hpcnc.com",
+    :homura => "oneadmin@homura.hpcnc.com",
+}
+
 role :storage, "oneadmin@opennebula-storage.hpcnc.com"
 role :opennebula, "oneadmin@opennebula.hpcnc.com"
-role :frontends, "oneadmin@10.10.0.2"
-role :vm_container, "oneadmin@10.10.2.1"
+role :frontends, "oneadmin@madoka.hpcnc.com", "oneadmin@homura.hpcnc.com"
+role :vpn_frontends, "oneadmin@10.10.1.1", "oneadmin@10.10.2.1"
+role :vm_container, "oneadmin@10.10.1.1"
 
 desc "ls"
 task :ls do
-  foo
+    set :gateway, gateways[:madoka]
   run "ls"
 end
 
