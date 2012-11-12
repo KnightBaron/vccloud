@@ -1,0 +1,20 @@
+VM-Container
+============
+
+## Required packages
+* openssl, openssl-devel
+* openvpn
+* tunctl
+* fail2ban
+
+## Installation checklist
+* Install OpenVPN
+* Setup oneadmin account
+* Add oneadmin to passwordless sudoers
+* turn off requiretty in sudoers
+* Setup OpenVPN
+* Create /datastores with chmod 777
+* Export NFS /datastores
+* Update iptables rules (through frontend firewall sync)
+* Turn off NetworkManager
+* Turn on all related services (openvpn)

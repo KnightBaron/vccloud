@@ -1,0 +1,31 @@
+VM-Container
+============
+
+## Required packages
+* groupinstalls "development tools"
+* ruby
+* openssl, openssl-devel
+* openvpn
+* qemu-kvm, qemu-kvm-tools
+* tunctl
+* fail2ban
+
+## Installation checklist
+* Install OpenVPN
+* Setup oneadmin account
+* Add oneadmin to passwordless sudoers
+* turn off requiretty in sudoers
+* Setup OpenVPN and OpenVPN Public
+* Config kvm, lib accordingly
+* Mount Datastores
+* Set rc.local
+* Update service scripts
+* Update network scripts
+* Update iptables rules (through frontend firewall sync)
+* Make sure that NetworkManager is turned off
+* Turn on all related services (libvirtd, openvpn, openvpn-public)
+* ln -s /usr/libexec/qemu-kvm /usr/bin/kvm
+
+## Notes
+* enable repos
+* kvm config http://opennebula.org/documentation:rel3.8:kvmg
