@@ -1,0 +1,2 @@
+mount 10.10.0.255:/datastores/1 /datastores/1
+mount 10.10.0.255:/datastores/102 /datastores/102
