@@ -123,6 +123,9 @@ case "$1" in
   start)
 	echo -n $"Starting openvpn: "
 
+	# Start bridge
+	/etc/openvpn/bridge-start
+
 	/sbin/modprobe tun >/dev/null 2>&1
 
 	# From a security perspective, I think it makes
@@ -201,6 +204,9 @@ case "$1" in
 	if [ -f $work/openvpn-shutdown ]; then
 	    $work/openvpn-shutdown
 	fi
+
+	# Bridge stop
+	/etc/openvpn/bridge-stop
 
 	success; echo
 	rm -f $lock

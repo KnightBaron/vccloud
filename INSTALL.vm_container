@@ -8,7 +8,6 @@ VM-Container
 * openvpn
 * qemu-kvm, qemu-kvm-tools
 * tunctl
-* fail2ban
 
 ## Installation checklist
 * Install OpenVPN
@@ -29,3 +28,4 @@ VM-Container
 ## Notes
 * enable repos
 * kvm config http://opennebula.org/documentation:rel3.8:kvmg
+* chmod +x /root/bin/datastores-*
