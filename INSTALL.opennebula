@@ -3,11 +3,18 @@ OpenNebula
 
 ## Required packages
 * opennebula
+* openssl, openssl-devel
 * openvpn
+* fail2ban
+* ruby
+
+## Required ruby gems
+* capistrano
 
 ## Installation checklist
 * Install OpenNebula
 * Install OpenVPN
+* Setup oneadmin account
 * Setup OpenVPN and OpenVPN Public
 * Mount Datastores
 * Set rc.local
@@ -16,6 +23,7 @@ OpenNebula
 * Turn off selinux
 * Update iptables rules
 * Turn off NetworkManager
+* Turn on all related services
 
 ## Notes
 * Update brctl path in OpenNebula's network script

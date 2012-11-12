@@ -1,0 +1,22 @@
+Frontend
+========
+
+## Required packages
+* openssl, openssl-devel
+* openvpn
+* fail2ban
+
+## Installation checklist
+* Install VM-Containers
+* Install OpenVPN
+* Setup oneadmin account
+* sync oneadmin account to vm-containers
+* Setup OpenVPN
+* Update service scripts
+* Make sure that selinux is turned off
+* Update iptables rules using Rocks 
+* Make sure that NetworkManager is turned off
+* Turn on all related services
+
+## Notes
+* Update brctl path in OpenNebula's network script
