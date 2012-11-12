@@ -1,0 +1,5 @@
+DEVICE=vpnbr1
+TYPE=Bridge
+BOOTPROTO=none
+ONBOOT=yes
+MTU=1500
