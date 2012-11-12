@@ -1,0 +1,2 @@
+#!/bin/bash
+mount 10.10.0.255:/datastores /home/oneadmin/.one/var/datastores

@@ -1,0 +1,21 @@
+OpenNebula
+==========
+
+## Required packages
+* opennebula
+* openvpn
+
+## Installation checklist
+* Install OpenNebula
+* Install OpenVPN
+* Setup OpenVPN and OpenVPN Public
+* Mount Datastores
+* Set rc.local
+* Update service scripts
+* Update network scripts
+* Turn off selinux
+* Update iptables rules
+* Turn off NetworkManager
+
+## Notes
+* Update brctl path in OpenNebula's network script
