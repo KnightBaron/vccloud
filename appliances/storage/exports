@@ -1,0 +1,4 @@
+/datastores	10.10.0.0/16(rw,sync,no_root_squash,no_subtree_check)
+/datastores/0	10.10.0.0/16(rw,sync,no_root_squash,no_subtree_check)
+/datastores/1	10.10.0.0/16(rw,sync,no_root_squash,no_subtree_check)
+/datastores/102	10.10.0.0/16(rw,sync,no_root_squash,no_subtree_check)

@@ -7,12 +7,14 @@ OpenNebula
 * openvpn
 * fail2ban
 * ruby
+* onevc (from source)
 
 ## Required ruby gems
 * capistrano
 
 ## Installation checklist
 * Install OpenNebula
+* Install onevc extension
 * Install OpenVPN
 * Setup oneadmin account
 * Setup OpenVPN and OpenVPN Public
