@@ -10,12 +10,15 @@ VM-Container
 * tunctl
 
 ## Installation checklist
+* Enable repos
 * Install OpenVPN
 * Setup oneadmin account
 * Add oneadmin to passwordless sudoers
 * turn off requiretty in sudoers
 * Setup OpenVPN and OpenVPN Public
 * Config kvm, lib accordingly
+* Create /datastores and chmod 777
+* Create /datastores/1 and /datastores/102
 * Mount Datastores
 * Set rc.local
 * Update service scripts
