@@ -1,3 +1,8 @@
+# Create oneadmin
+groupadd -g 1001 oneadmin
+useradd -g oneadmin -u 1001 oneadmin
+rocks sync host sharedkey
+rocks sync users
 # Update Frontend & VM-Container firewall
 rocks add network tap0 10.10.0.0 255.255.0.0 servedns=false
 rocks add network tap1 10.10.0.0 255.255.0.0 servedns=false

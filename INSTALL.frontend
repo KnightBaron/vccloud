@@ -7,6 +7,7 @@ Frontend
 * fail2ban
 
 ## Installation checklist
+* Enable repos
 * Install VM-Containers
 * Install OpenVPN
 * Setup oneadmin account
