@@ -1,6 +1,7 @@
 # Create oneadmin
 groupadd -g 1001 oneadmin
 useradd -g oneadmin -u 1001 oneadmin
+usermod -a -G kvm oneadmin
 rocks sync host sharedkey
 rocks sync users
 # Update Frontend & VM-Container firewall
@@ -17,4 +18,5 @@ rocks add firewall appliance=frontend rulename=ACCEPT_VPN_TAP1 action=ACCEPT cha
 rocks add firewall appliance=frontend rulename=ACCEPT_VPN_VPNBR0 action=ACCEPT chain=INPUT network=vpnbr0 protocol=all service=all
 rocks add firewall appliance=frontend rulename=FORWARD_VPN_VPNBR0 action=ACCEPT chain=FORWARD network=vpnbr0 protocol=all service=all
 rocks sync host sharedkey
-rocks sync host firewall
+rocks sync host firewall frontend
+rocks sync host firewall vm-container
