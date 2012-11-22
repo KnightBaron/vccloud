@@ -1,9 +1,0 @@
-eth="eth0"
-network="158.108.38.64"
-netmask="255.255.255.224"
-gateway="158.108.38.65"
-
-#route del default gw $gateway $eth
-#route del -net $network netmask $netmask $eth
-#route add -net $network netmask $netmask
-#route add default gw $gateway vpnbr0

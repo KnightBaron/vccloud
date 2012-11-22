@@ -1,0 +1,6 @@
+DEVICE="tap1"
+BOOTPROTO=none
+ONBOOT=yes
+TYPE=Tap
+BRIDGE="vpnbr0"
+PROMISC=yes

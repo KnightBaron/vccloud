@@ -7,4 +7,7 @@
 touch /var/lock/subsys/local
 
 # OpenNebula
+ifconfig eth0 promisc
+ifconfig tap0 promisc
+ifconfig tap1 promisc
 /root/bin/datastores-mount
