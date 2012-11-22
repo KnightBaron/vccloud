@@ -1,0 +1,79 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 1 (0x1)
+        Signature Algorithm: sha1WithRSAEncryption
+        Issuer: C=TH, ST=Bangkok, L=Bangkhen, O=Kasetsart University, OU=Department of Computer Engineering, CN=opennebula.hpcnc.com/name=vccloud/emailAddress=knightbaron@gmail.com
+        Validity
+            Not Before: Nov  4 06:27:16 2012 GMT
+            Not After : Nov  2 06:27:16 2022 GMT
+        Subject: C=TH, ST=Bangkok, L=Bangkhen, O=Kasetsart_University, OU=Department of Computer Engineering, CN=opennebula.hpcnc.com/name=vccloud/emailAddress=knightbaron@gmail.com
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (1024 bit)
+                Modulus:
+                    00:df:de:69:11:46:c1:ec:90:3e:e5:0c:c9:94:16:
+                    fc:7a:47:bb:52:2e:22:58:04:8d:7c:cd:02:e0:41:
+                    0c:62:2f:b4:1c:7a:4b:19:7a:73:f2:14:e1:f4:77:
+                    87:2e:d7:66:8d:6b:38:40:cb:dc:5c:7a:03:ef:58:
+                    fc:40:6b:da:ab:c8:f6:b2:d6:80:a4:a8:71:02:5e:
+                    03:63:c8:29:26:74:75:4d:e8:a2:ac:53:0d:cc:75:
+                    a0:fe:26:3e:e8:35:bc:39:e4:bd:bf:d8:ef:36:cb:
+                    6b:c0:1a:2e:74:3c:56:72:00:6d:c5:d7:88:63:7f:
+                    5e:9a:2e:a0:d0:f5:cb:0b:af
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            Netscape Cert Type: 
+                SSL Server
+            Netscape Comment: 
+                Easy-RSA Generated Server Certificate
+            X509v3 Subject Key Identifier: 
+                53:EB:26:17:B1:FB:2F:C8:D9:8F:F4:00:03:47:3E:8A:CB:9F:88:8A
+            X509v3 Authority Key Identifier: 
+                keyid:AC:C2:0F:88:49:07:32:32:FE:A3:C8:8B:AE:93:A6:A5:DD:0F:62:33
+                DirName:/C=TH/ST=Bangkok/L=Bangkhen/O=Kasetsart University/OU=Department of Computer Engineering/CN=opennebula.hpcnc.com/name=vccloud/emailAddress=knightbaron@gmail.com
+                serial:DC:80:63:D6:98:AE:A3:7A
+
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication
+            X509v3 Key Usage: 
+                Digital Signature, Key Encipherment
+    Signature Algorithm: sha1WithRSAEncryption
+        96:30:b3:61:ab:90:ab:58:26:a0:10:10:75:08:16:a3:a9:00:
+        f9:35:ea:20:aa:62:29:a4:7f:11:81:ad:c6:58:a0:f0:53:4a:
+        0e:4e:bb:37:d0:bb:7d:fb:d2:d1:3b:b9:71:2b:6e:43:be:d3:
+        0b:9f:96:1d:89:bc:d6:1f:7b:b8:30:5b:7c:6d:a2:07:a8:07:
+        c6:41:9b:0a:97:44:8f:72:46:29:71:8b:b6:43:ee:fc:8a:4b:
+        b9:94:24:b0:a8:e9:d9:28:bf:9a:d0:87:96:a3:16:75:b5:47:
+        0d:e6:69:5c:fe:e2:51:1a:a1:f0:1d:a4:3c:b6:1d:92:21:86:
+        ef:5c
+-----BEGIN CERTIFICATE-----
+MIIEzDCCBDWgAwIBAgIBATANBgkqhkiG9w0BAQUFADCB1TELMAkGA1UEBhMCVEgx
+EDAOBgNVBAgTB0Jhbmdrb2sxETAPBgNVBAcTCEJhbmdraGVuMR0wGwYDVQQKExRL
+YXNldHNhcnQgVW5pdmVyc2l0eTErMCkGA1UECxMiRGVwYXJ0bWVudCBvZiBDb21w
+dXRlciBFbmdpbmVlcmluZzEdMBsGA1UEAxMUb3Blbm5lYnVsYS5ocGNuYy5jb20x
+EDAOBgNVBCkTB3ZjY2xvdWQxJDAiBgkqhkiG9w0BCQEWFWtuaWdodGJhcm9uQGdt
+YWlsLmNvbTAeFw0xMjExMDQwNjI3MTZaFw0yMjExMDIwNjI3MTZaMIHVMQswCQYD
+VQQGEwJUSDEQMA4GA1UECBMHQmFuZ2tvazERMA8GA1UEBxMIQmFuZ2toZW4xHTAb
+BgNVBAoUFEthc2V0c2FydF9Vbml2ZXJzaXR5MSswKQYDVQQLEyJEZXBhcnRtZW50
+IG9mIENvbXB1dGVyIEVuZ2luZWVyaW5nMR0wGwYDVQQDExRvcGVubmVidWxhLmhw
+Y25jLmNvbTEQMA4GA1UEKRMHdmNjbG91ZDEkMCIGCSqGSIb3DQEJARYVa25pZ2h0
+YmFyb25AZ21haWwuY29tMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDf3mkR
+RsHskD7lDMmUFvx6R7tSLiJYBI18zQLgQQxiL7QceksZenPyFOH0d4cu12aNazhA
+y9xcegPvWPxAa9qryPay1oCkqHECXgNjyCkmdHVN6KKsUw3MdaD+Jj7oNbw55L2/
+2O82y2vAGi50PFZyAG3F14hjf16aLqDQ9csLrwIDAQABo4IBqDCCAaQwCQYDVR0T
+BAIwADARBglghkgBhvhCAQEEBAMCBkAwNAYJYIZIAYb4QgENBCcWJUVhc3ktUlNB
+IEdlbmVyYXRlZCBTZXJ2ZXIgQ2VydGlmaWNhdGUwHQYDVR0OBBYEFFPrJhex+y/I
+2Y/0AANHPorLn4iKMIIBCwYDVR0jBIIBAjCB/4AUrMIPiEkHMjL+o8iLrpOmpd0P
+YjOhgdukgdgwgdUxCzAJBgNVBAYTAlRIMRAwDgYDVQQIEwdCYW5na29rMREwDwYD
+VQQHEwhCYW5na2hlbjEdMBsGA1UEChMUS2FzZXRzYXJ0IFVuaXZlcnNpdHkxKzAp
+BgNVBAsTIkRlcGFydG1lbnQgb2YgQ29tcHV0ZXIgRW5naW5lZXJpbmcxHTAbBgNV
+BAMTFG9wZW5uZWJ1bGEuaHBjbmMuY29tMRAwDgYDVQQpEwd2Y2Nsb3VkMSQwIgYJ
+KoZIhvcNAQkBFhVrbmlnaHRiYXJvbkBnbWFpbC5jb22CCQDcgGPWmK6jejATBgNV
+HSUEDDAKBggrBgEFBQcDATALBgNVHQ8EBAMCBaAwDQYJKoZIhvcNAQEFBQADgYEA
+ljCzYauQq1gmoBAQdQgWo6kA+TXqIKpiKaR/EYGtxlig8FNKDk67N9C7ffvS0Tu5
+cStuQ77TC5+WHYm81h97uDBbfG2iB6gHxkGbCpdEj3JGKXGLtkPu/IpLuZQksKjp
+2Si/mtCHlqMWdbVHDeZpXP7iURqh8B2kPLYdkiGG71w=
+-----END CERTIFICATE-----
