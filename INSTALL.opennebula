@@ -26,6 +26,7 @@ OpenNebula
 * Update iptables rules
 * Turn off NetworkManager
 * Turn on all related services
+* Setup onevc web interface server
 
 ## Notes
 * Update brctl path in OpenNebula's network script
