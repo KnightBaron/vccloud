@@ -13,10 +13,10 @@ VM-Container
 * Turn off auto-reinstall
 * Enable repos
 * Install OpenVPN
-* Setup oneadmin account
+* Setup oneadmin account (by syncing from frontend and restart)
 * Add oneadmin to passwordless sudoers
 * turn off requiretty in sudoers
-* Setup OpenVPN and OpenVPN Public
+* Setup OpenVPN and OpenVPN Public (Change OpenVPN ip at /etc/sysconfig/network-scripts/ifcfg-vpnbr0 accordingly)
 * Config kvm, lib accordingly
 * Link /state/partition1 to /datastores and chmod 777
 * Create /datastores/1 and /datastores/102
