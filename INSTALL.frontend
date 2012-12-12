@@ -7,6 +7,7 @@ Frontend
 * fail2ban
 
 ## Installation checklist
+* Turn off auto-reinstall
 * Enable repos
 * Install VM-Containers
 * Install OpenVPN

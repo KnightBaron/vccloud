@@ -10,6 +10,7 @@ VM-Container
 * tunctl
 
 ## Installation checklist
+* Turn off auto-reinstall
 * Enable repos
 * Install OpenVPN
 * Setup oneadmin account
