@@ -2,7 +2,7 @@ VM-Container
 ============
 
 ## Required packages
-* groupinstalls "development tools"
+* groupinstall "development tools"
 * ruby
 * openssl, openssl-devel
 * openvpn
