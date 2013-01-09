@@ -4,6 +4,7 @@ Frontend
 ## Required packages
 * openssl, openssl-devel
 * openvpn
+* tunctl
 * fail2ban
 
 ## Installation checklist
@@ -11,14 +12,38 @@ Frontend
 * Enable repos
 * Install VM-Containers
 * Install OpenVPN
-* Setup oneadmin account
+* Setup oneadmin account (mind .ssh file permission!!)
 * sync oneadmin account to vm-containers
 * Setup OpenVPN
 * Update service scripts
-* Make sure that selinux is turned off
+* Make sure that selinux is turned off (/etc/selinux/config)
 * Update iptables rules using Rocks 
 * Make sure that NetworkManager is turned off
 * Turn on all related services
 
-## Notes
-* Update brctl path in OpenNebula's network script
+## How to
+
+# oneadmin account
+  $ groupadd --gid 1001 oneadmin
+  $ useradd --uid 1001 -g oneadmin oneadmin
+  $ rocks sync host sharedkey
+  $ rocks sync users
+
+# Turn off auto-reinstall
+  $ service rocks-grub stop
+  $ chkconfig rocks-grub off
+https://groups.google.com/forum/?fromgroups=#!topic/rocks-clusters/5I0FMqsb4iM
+
+# Firewall
+rocks add network tap0 10.10.0.0 255.255.0.0 servedns=false
+rocks add network tap1 10.10.0.0 255.255.0.0 servedns=false
+rocks add network vpnbr0 10.10.0.0 255.255.0.0 servedns=false
+rocks add host interface frontend tap0 subnet=tap0
+rocks add host interface frontend tap1 subnet=tap1
+rocks add host interface frontend vpnbr0 subnet=vpnbr0
+rocks add firewall appliance=frontend rulename=MASQUERADE_TAP0 action=MASQUERADE chain=POSTROUTING network=all output-network=tap0 protocol=all service=nat
+rocks add firewall appliance=frontend rulename=ACCEPT_VPN action=ACCEPT chain=INPUT network=all protocol=udp service=1194
+rocks add firewall appliance=frontend rulename=ACCEPT_VPN_TAP0 action=ACCEPT chain=INPUT network=tap0 protocol=all service=all
+rocks add firewall appliance=frontend rulename=ACCEPT_VPN_TAP1 action=ACCEPT chain=INPUT network=tap1 protocol=all service=all
+rocks add firewall appliance=frontend rulename=ACCEPT_VPN_VPNBR0 action=ACCEPT chain=INPUT network=vpnbr0 protocol=all service=all
+rocks add firewall appliance=frontend rulename=FORWARD_VPN_VPNBR0 action=ACCEPT chain=FORWARD network=vpnbr0 protocol=all service=all
