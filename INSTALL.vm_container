@@ -28,7 +28,7 @@ VM-Container
 * Make sure that NetworkManager is turned off
 * Turn on all related services (libvirtd, openvpn, openvpn-public)
 * ln -s /usr/libexec/qemu-kvm /usr/bin/kvm
-* turn off arp_ignore at /etc/sysctl.conf
+* turn on arp_ignore at /etc/sysctl.conf
 
 ## Notes
 * enable repos

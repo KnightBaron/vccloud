@@ -19,7 +19,10 @@ Frontend
 * Make sure that selinux is turned off (/etc/selinux/config)
 * Update iptables rules using Rocks 
 * Make sure that NetworkManager is turned off
-* Turn on all related services
+* Turn on all related services (openvpn)
+
+## File to be edited per installaion
+* /etc/openvpn/server.conf -- Edit Ethernet bridge interface
 
 ## How to
 
